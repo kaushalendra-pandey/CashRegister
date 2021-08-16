@@ -1,0 +1,71 @@
+.notes-table {
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem;
+}
+
+th {
+    padding: 2rem;
+    font-size: 20px;
+    border: 2px solid black;
+    font-size: 25px;
+    color: 25px;
+}
+
+td {
+    padding: 2rem;
+    font-size: 20px;
+    border: 2px solid black;
+    font-size: 25px;
+    color: indigo;
+}
+
+button {
+    padding: 15px;
+    margin-left: 35vw;
+    border-radius: 8px;
+    width: 33vw;
+    font-size: 30px;
+    background: mediumspringgreen;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    text-decoration: underline;
+    color: tomato;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+input {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+#alert-text {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+    justify-content: center;
+    margin: 0.8rem;
+}
+}
+
+input:focus {
+    border: 1px solid green;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: green;
+}
