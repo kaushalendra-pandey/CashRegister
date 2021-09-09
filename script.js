@@ -22,9 +22,12 @@ const formAnswer = (amountToReturn) => {
 
 const solve = () => {
     alert.innerHTML = ""
+
     for(let i = 0; i<tableData.length;i++){
         tableData[i].style.backgroundColor = "white"
+        tableData[i].innerHTML = 0
     }
+    
     amountToReturn = paidAmount.value - mainAmount.value
     if(amountToReturn < 0) {
         alert.innerHTML = "Dhandha aise nhi chalta!"
