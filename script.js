@@ -23,6 +23,11 @@ const formAnswer = (amountToReturn) => {
 const solve = () => {
     alert.innerHTML = ""
 
+    if(!paidAmount.value || !mainAmount.value) {
+        alert.innerHTML = "All fields are required"
+        return
+    }
+
     for(let i = 0; i<tableData.length;i++){
         tableData[i].style.backgroundColor = "white"
         tableData[i].innerHTML = 0
@@ -31,6 +36,7 @@ const solve = () => {
     amountToReturn = paidAmount.value - mainAmount.value
     if(amountToReturn < 0) {
         alert.innerHTML = "Dhandha aise nhi chalta!"
+        return
     }
     formAnswer(amountToReturn)
     window.scrollTo(0,document.body.scrollHeight)
